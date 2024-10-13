@@ -3,32 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Company Name</title>
+    <title>Mindwell</title>
     <style>
+        /* CSS Variables for easy color customization */
+        :root {
+            --primary-color: #ff69b4; /* Pink color */
+            --button-height: 50px;
+            --button-width: 200px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; /* Ensures padding and border are included in element width/height */
+        }
+
         body {
-            text-align: center;
+            display: flex;
+            justify-content: center; /* Centers content horizontally */
+            align-items: center;     /* Centers content vertically */
+            height: 100vh;           /* Full viewport height */
             font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* Optional background for contrast */
         }
+
+        .container {
+            text-align: center;
+        }
+
         img {
-            max-width: 200px;
-            margin-top: 50px;
+            max-width: 150px;
+            margin-bottom: 20px;
         }
+
+        h1 {
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.2em;
+        }
+
         a {
             display: inline-block;
-            margin: 20px;
-            padding: 10px 20px;
-            background-color: #007BFF;
+            text-align: center;
+            background-color: var(--primary-color); /* Pink color */
             color: white;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 25px; /* Fully rounded corners */
+            height: var(--button-height);
+            width: var(--button-width); /* Ensure all buttons are the same size */
+            line-height: var(--button-height); /* Centers text vertically */
+            margin: 10px;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease; /* Smooth hover transition */
+        }
+
+        a:hover {
+            background-color: #ff1493; /* Darker pink on hover */
         }
     </style>
 </head>
 <body>
-    <img src="logo.png" alt="Company Logo">
-    <h1>Your Company Name</h1>
-    <p>Download our app from the stores below:</p>
-    <a href="https://apps.apple.com">Download on the App Store</a>
-    <a href="https://play.google.com">Get it on Google Play</a>
+    <div class="container">
+        <img src="logo.png" alt="Company Logo">
+        <h1>Mindwell</h1>
+        <p>Download our app from the stores below:</p>
+        <a href="https://apps.apple.com">App Store</a>
+        <a href="https://play.google.com">Google Play</a>
+    </div>
 </body>
 </html>
