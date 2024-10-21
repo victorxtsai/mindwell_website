@@ -10,8 +10,8 @@
         :root {
             --primary-color: #000000; /* Primary color */
             --button-height: 50px;
-            --button-width: 200px;
-            --max-content-width: 1200px; /* Max width for content */
+            --button-width: 50px;
+            --max-content-width: 800px; /* Max width for content */
             --min-content-width: 300px;  /* Min width for content */
         }
 
@@ -48,7 +48,7 @@
         }
 
         .header img {
-            max-width: 150px;
+            max-width: 50px;
             cursor: pointer; /* Make the logo clickable */
         }
 
@@ -77,22 +77,16 @@
         }
 
         a {
-            display: inline-block;
-            text-align: center;
-            background-color: var(--primary-color);
-            color: #FFFFFF;
-            text-decoration: none;
-            border-radius: 25px;
-            height: var(--button-height);
-            width: var(--button-width); /* Ensure all buttons are the same size */
-            line-height: var(--button-height); /* Centers text vertically */
-            margin: 10px;
-            font-size: 1.1em;
-            transition: background-color 0.3s ease; /* Smooth hover transition */
+            text-decoration: none;   /* Keeps the link without underline */
+            color: var(--primary-color);  /* Sets the text color to the primary color */
+            font-size: 1.1em;  /* You can adjust the font size as needed */
+            margin: 10px;  /* Optional: Adds some spacing around the link */
+            transition: color 0.3s ease;  /* Smooth color change on hover */
         }
 
         a:hover {
-            background-color: #333333; /* Darker on hover */
+            text-decoration: underline;  /* Adds underline on hover */
+            /* color: #333333;  /* chnge color on hover */
         }
 
         footer {
@@ -177,8 +171,8 @@
     <!-- Footer with important links -->
     <footer class="footer">
         <div class="footer-content">
+            <a href="mission.html">Mission</a>
             <a href="privacy.html">Privacy</a>
-            <a href="mission.html">About</a>
             <a href="faq.html">FAQ</a>
         </div>
     </footer>
