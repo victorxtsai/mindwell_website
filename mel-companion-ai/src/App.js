@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Chatbot from "./Chatbot"; // Import Chatbot component
+// import Chatbot from "./Chatbot"; // Import Chatbot component
 
 const Home = () => (
   <div>
