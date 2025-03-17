@@ -8,7 +8,8 @@
     <link rel="icon" href="assets/images/logo_002.png" type="image/png">
     <style>
         :root {
-            --primary-color: #000000;
+            --primary-color: #000000; /* Black text */
+            --background-color: #FFFFFF; /* White background */
             --max-content-width: 800px;
             --min-content-width: 300px;
         }
@@ -24,13 +25,13 @@
             flex-direction: column;
             min-height: 100vh;
             font-family: Arial, sans-serif;
-            background-color: #FFFFFF;
+            background-color: var(--background-color);
             max-width: 100vw;
         }
 
         .header, .footer {
             width: 100%;
-            background-color: #FFFFFF;
+            background-color: var(--background-color);
         }
 
         .header-content, .footer-content {
@@ -80,13 +81,63 @@
             font-size: 1.1em;
             color: var(--primary-color);
         }
+
+        .info {
+            margin-left: 20px;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        .logo-text-link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .logo {
+            max-width: 75px;
+            margin-right: 10px;
+        }
+
+        .logo-text {
+            font-size: 1em;
+            color: var(--primary-color);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            font-size: 1.2em;
+            color: var(--primary-color);
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-content {
+            justify-content: center;
+        }
+
     </style>
 </head>
 <body>
+
+    <!-- Header -->
     <header class="header">
         <div class="header-content">
             <a href="https://www.mindwell.io" class="logo-text-link">
-                <img src="assets/images/logo_white.png" alt="Mindwell Logo" class="logo">
+                <img src="assets/images/logo_black.png" alt="Mindwell Logo" class="logo">
                 <span class="logo-text">Mindwell</span>
             </a>
             <nav class="nav-links">
@@ -97,6 +148,7 @@
         </div>
     </header>
 
+    <!-- Main Content -->
     <div class="container">
         <h1>Membership Plans</h1>
         <p>Choose the plan that best fits your mental wellness journey.</p>
@@ -105,19 +157,12 @@
             <h2>Free</h2>
             <ul>
                 <li>Does not require creating an account</li>
-                <div style="margin-left: 20px; font-size: 0.9em; color: #555;">
-                    • To be explained further
-                </div>
+                <div class="info">• To be explained further</div>
                 <li>Localized journaling experience</li>
-                <div style="margin-left: 20px; font-size: 0.9em; color: #555;">
-                    • Journal, mood, and other data may still be uploaded to the cloud to enhance future personalization and features. 
-                <div style="margin-left: 20px; font-size: 0.9em; color: #555;">
-                    • Please read our <a href="https://www.mindwellworld.com/privacy" style="color: #007BFF; text-decoration: none;">privacy policy</a> to understand how we use your data. Or ask us questions on <a href="https://x.com/MindwellWorld" style="color: #007BFF; text-decoration: none;">X/Twitter</a>! 
-                </div>
-                <li>Minimial personalization</li>
-                <div style="margin-left: 20px; font-size: 0.9em; color: #555;">
-                    • To be explained further
-                </div>
+                <div class="info">• Journal, mood, and other data may still be uploaded to the cloud to enhance future personalization and features.</div>
+                <div class="info">• Please read our <a href="https://www.mindwellworld.com/privacy">privacy policy</a> or ask us on <a href="https://x.com/MindwellWorld">X/Twitter</a>!</div>
+                <li>Minimal personalization</li>
+                <div class="info">• To be explained further</div>
             </ul>
         </div>
 
@@ -126,16 +171,10 @@
             <ul>
                 <li>Requires creating an account</li>
                 <li>Limited cloud backup</li>
-                <div style="margin-left: 20px; font-size: 0.9em; color: #555;">
-                    • We may provide free cloud backup for the last 30? (TBD) entries. Like the free version, data may still be uploaded to enhance future personalization and features.
-                </div>
-                <div style="margin-left: 20px; font-size: 0.9em; color: #555;">
-                    • Please read our <a href="https://www.mindwellworld.com/privacy" style="color: #007BFF; text-decoration: none;">privacy policy</a> to understand how we use your data. Or ask us questions on <a href="https://x.com/MindwellWorld" style="color: #007BFF; text-decoration: none;">X/Twitter</a>! 
-                </div>
-                <li>Minimial personalization</li>
-                <div style="margin-left: 20px; font-size: 0.9em; color: #555;">
-                    • To be explained further
-                </div>
+                <div class="info">• We may provide free cloud backup for the last 30? (TBD) entries. Like the free version, data may still be uploaded for future features.</div>
+                <div class="info">• Please read our <a href="https://www.mindwellworld.com/privacy">privacy policy</a> or ask us on <a href="https://x.com/MindwellWorld">X/Twitter</a>!</div>
+                <li>Minimal personalization</li>
+                <div class="info">• To be explained further</div>
             </ul>
         </div>
 
@@ -143,19 +182,11 @@
             <h2>Cloud</h2>
             <ul>
                 <li>Daily entries are backed up to the cloud</li>
-                <div style="margin-left: 20px; font-size: 0.9em; color: #555;">
-                    • Users will get unlimited storage for daily entries, mood selections, and more. Storage for images and voice memos may be capped (TBD).
-                </div>
-                <div style="margin-left: 20px; font-size: 0.9em; color: #555;">
-                    • Upon installation of the app on a new device, media may be streamed back to your device for playback. You will be able to separately download your data.
-                </div>
-                <div style="margin-left: 20px; font-size: 0.9em; color: #555;">
-                    • Please read our <a href="https://www.mindwellworld.com/privacy" style="color: #007BFF; text-decoration: none;">privacy policy</a> to understand how we use your data. Or ask us questions on <a href="https://x.com/MindwellWorld" style="color: #007BFF; text-decoration: none;">X/Twitter</a>! 
-                </div>
+                <div class="info">• Unlimited storage for daily entries, mood selections, and more. Media storage may be capped (TBD).</div>
+                <div class="info">• Upon new device installation, media may be streamed back to your device for playback.</div>
+                <div class="info">• Please read our <a href="https://www.mindwellworld.com/privacy">privacy policy</a> or ask us on <a href="https://x.com/MindwellWorld">X/Twitter</a>!</div>
                 <li>Moderate personalization</li>
-                <div style="margin-left: 20px; font-size: 0.9em; color: #555;">
-                    • To be explained further
-                </div>
+                <div class="info">• To be explained further</div>
             </ul>
         </div>
 
@@ -174,6 +205,7 @@
         </div>
     </div>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
             <a href="https://www.mindwellworld.com/mission">Mission</a>
@@ -181,5 +213,6 @@
             <a href="mailto:support@mindwell.io">Contact</a>
         </div>
     </footer>
+
 </body>
 </html>
