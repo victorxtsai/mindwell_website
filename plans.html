@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contributors - Mindwell</title>
+    <title>Plans - Mindwell</title>
     <link rel="icon" href="assets/images/logo_002.png" type="image/png">
     <style>
         :root {
-            --primary-color: #000000; /* Primary text color */
-            --max-content-width: 800px; /* Max width for content */
-            --min-content-width: 300px; /* Min width for content */
+            --primary-color: #000000;
+            --max-content-width: 800px;
+            --min-content-width: 300px;
         }
 
         * {
@@ -21,12 +21,10 @@
         body {
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
             min-height: 100vh;
             font-family: Arial, sans-serif;
             background-color: #FFFFFF;
             max-width: 100vw;
-            min-width: 300px;
         }
 
         .header, .footer {
@@ -44,10 +42,6 @@
             align-items: center;
         }
 
-        .header img {
-            max-width: 50px;
-        }
-
         .container {
             max-width: var(--max-content-width);
             min-width: var(--min-content-width);
@@ -62,88 +56,32 @@
             margin-bottom: 20px;
         }
 
-        p {
-            font-size: 1.2em;
-            margin-bottom: 20px;
-            color: var(--primary-color);
-        }
-
-        .contributor {
-            margin-bottom: 20px;
+        .plan {
+            margin-bottom: 30px;
             text-align: left;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
         }
 
-        .contributor h2 {
-            font-size: 1.2em; /* Smaller font size for names */
+        .plan h2 {
+            font-size: 1.5em;
             color: var(--primary-color);
             margin-bottom: 10px;
         }
 
-        .contributor ul {
+        .plan ul {
             list-style-type: disc;
             padding-left: 20px;
         }
 
-        .contributor ul li {
-            margin-bottom: 5px;
-            font-size: 1em; /* Smaller font size for bullets */
+        .plan ul li {
+            margin-bottom: 8px;
+            font-size: 1.1em;
             color: var(--primary-color);
-        }
-
-        footer {
-            width: 100%;
-            background-color: #FFFFFF;
-        }
-
-        footer a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #000000;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        .footer-content {
-            justify-content: center;
-        }
-
-        .logo-text-link {
-            display: flex;
-            align-items: center;
-            text-decoration: none;
-        }
-
-        .logo {
-            max-width: 50px;
-            margin-right: 10px;
-        }
-
-        .logo-text {
-            font-size: 1em;
-            color: #000000;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 20px;
-        }
-        
-        .nav-links a {
-            text-decoration: none;
-            font-size: 1.2em;
-            color: var(--primary-color);
-            transition: color 0.3s ease;
-        }
-
-        .nav-links a:hover {
-            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <!-- Header with logo linking to home -->
     <header class="header">
         <div class="header-content">
             <a href="https://www.mindwell.io" class="logo-text-link">
@@ -152,57 +90,77 @@
             </a>
             <nav class="nav-links">
                 <a href="https://mel.mindwell.io">Chat With Mel</a>
-                <a href="https://www.mindwell.io/features.html">Features</a>
-                <a href="https://www.mindwell.io/plans.html">Plans</a>
+                <a href="https://www.mindwell.io/features">Features</a>
+                <a href="https://www.mindwell.io/plans">Plans</a>
             </nav>
         </div>
     </header>
 
-    <!-- Main content -->
     <div class="container">
-        <h1>Plans</h1>
-        <p>Currently we offer the following membership levels:</p>
+        <h1>Membership Plans</h1>
+        <p>Choose the plan that best fits your mental wellness journey.</p>
 
-        <!-- Contributor 1 -->
-        <div class="contributor">
+        <div class="plan">
             <h2>Free</h2>
             <ul>
-                <li>Daily entires are backed up to the cloud</li>
-                <li>Access to four color modes</li>
-                <li>Collect reward points, achievements, streaks, and badges</li>
+                <li>Does not require creating an account</li>
+                <div style="margin-left: 20px; font-size: 0.9em; color: #555;">
+                    * To be explained
+                </div>
+                <li>Localized journaling experience</li>
+                <div style="margin-left: 20px; font-size: 0.9em; color: #555;">
+                    * Note: Journal, mood, and other data may still be uploaded to the cloud to enhance future personalization and features. Please read our <a href="https://www.mindwellworld.com/privacy" style="color: #007BFF; text-decoration: none;">privacy policy</a> to understand how we use your data. Or ask us questions on<a href="https://x.com/MindwellWorld" style="color: #007BFF; text-decoration: none;">X/Twitter</a>! 
+                </div>
+                <li>Minimial personalization</li>
+                <div style="margin-left: 20px; font-size: 0.9em; color: #555;">
+                    * To be explained
+                </div>
             </ul>
         </div>
 
-        <!-- Contributor 2 -->
-        <div class="contributor">
+        <div class="plan">
             <h2>Registered</h2>
             <ul>
-                <li>Daily entires are backed up to the cloud</li>
-                <li>Access to four color modes</li>
-                <li>Collect reward points, achievements, streaks, and badges</li>
+                <li>Requires creating an account</li>
+                <li>Limited cloud backup</li>
+                <div style="margin-left: 20px; font-size: 0.9em; color: #555;">
+                    * Note: We may provide free cloud backup for the last 30 entries. Like the free version, data may still be uploaded to enhance future personalization and features. Please read our <a href="https://www.mindwellworld.com/privacy" style="color: #007BFF; text-decoration: none;">privacy policy</a> to understand how we use your data. Or ask us questions on<a href="https://x.com/MindwellWorld" style="color: #007BFF; text-decoration: none;">X/Twitter</a>! 
+                </div>
+                <li>Minimial personalization</li>
+                <div style="margin-left: 20px; font-size: 0.9em; color: #555;">
+                    * To be explained
+                </div>
             </ul>
         </div>
 
-        <!-- Contributor 2 -->
-        <div class="contributor">
+        <div class="plan">
             <h2>Cloud</h2>
             <ul>
-                <li>Daily entires are backed up to the cloud</li>
-                <li>Access to four color modes</li>
-                <li>Collect reward points, achievements, streaks, and badges</li>
+                <li>Daily entries are backed up to the cloud</li>
+                <div style="margin-left: 20px; font-size: 0.9em; color: #555;">
+                    * Users will get up to some GBs of storage for images and voice memos.
+                </div>
+                <div style="margin-left: 20px; font-size: 0.9em; color: #555;">
+                    * Data is backed up to the cloud, which allows users to download their data on new devices.  With that said, media such as images and voice memos will not automatically download - but instead be streamed back to your device for playback (to save on storage space). You will be able to separately download your data.  Media storage will be somewhat limited - TBD.
+                </div>
+                <div style="margin-left: 20px; font-size: 0.9em; color: #555;">
+                    * Please read our <a href="https://www.mindwellworld.com/privacy" style="color: #007BFF; text-decoration: none;">privacy policy</a> to understand how we use your data. Or ask us questions on<a href="https://x.com/MindwellWorld" style="color: #007BFF; text-decoration: none;">X/Twitter</a>! 
+                </div>
+                <li>Moderate personalization</li>
+                <div style="margin-left: 20px; font-size: 0.9em; color: #555;">
+                    * To be explained
+                </div>
             </ul>
         </div>
-    </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <a href="https://www.mindwell.io/">App</a>
-            <a href="https://www.mindwellworld.com/mission.html">Mission</a>
-            <a href="https://www.mindwellworld.com/privacy.html">Privacy</a>
-            <a href="https://www.mindwellworld.com/contributors.html">Contributors</a>
-            <a href="mailto:support@mindwell.io">Contact</a>
+        <div class="plan">
+            <h2>AI</h2>
+            <ul>
+                <li>To be disclosed</li>
+            </ul>
         </div>
-    </footer>
-</body>
-</html>
+
+        <div class="plan">
+            <h2>AI Plus</h2>
+            <ul>
+                <li>To be disclosed</li>
